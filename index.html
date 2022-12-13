@@ -6,44 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
 
-    <header>
-        <h1 class="bg-primary">
-            <colspan>Weather Dashboard</colspan>
+    <header class="bg-primary">
+        <h1>
+            Weather Dashboard
         </h1>
+    </header>
+
+    <div class="row">
         <div class="search">
             <h2>Search for a City:</h2>
             <input id="search-city" placeholder="Search City">
             <button id="search-btn">Search</button>
             <hr>
-            <div>
-                <ul>
+            <div class="search-history">
 
-                </ul>
             </div>
         </div>
         <div>
-            <div class="full-report">
-                <h2 class="city-name">City Name</h2>
-                <p id="temperature"></p>
-                <p id="wind"></p>
-                <p id="humidity"></p>
+            <div>
+                <div class="current">
+                    <div class="row">
+                        <h2 class="city-name">City Name</h2>
+                        <img id="icon">
+                    </div>
+                    <p id="temperature"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="day-1">
+                    <div class="date"></div>
+                    <div><img class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+                <div class="col" id="day-2">
+                    <div class="date"></div>
+                    <div><img class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+                <div class="col" id="day-3">
+                    <div class="date"></div>
+                    <div><img class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+                <div class="col" id="day-4">
+                    <div class="date"></div>
+                    <div><img class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+                <div class="col" id="day-5">
+                    <div class="date"></div>
+                    <div><img class="icon"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
             </div>
         </div>
-
-    </header>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
     <script src="./assets/script.js"></script>
 </body>
 

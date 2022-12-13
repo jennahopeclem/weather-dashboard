@@ -1,6 +1,55 @@
-.search {
-    /* float: left; */
-    margin-left: auto;
+.bg-primary {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(0, 38, 77), rgba(0, 82, 162));
 }
 
-div.full-report {}
+h1 {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+hr {
+    width: 100%;
+}
+
+/* div {
+    display: inline-block;
+} */
+
+/* .search {
+    float: left;
+    width: 25%;
+    position: absolute;
+    left: 15px;
+    width: span;
+}*/
+
+.current {
+    border-style: solid;
+    width: 800px;
+    height: 200px;
+    padding: 25px;
+    margin: 10px 0;
+}
+
+.col {
+    display: flexbox;
+    height: 200px;
+    width: 20%;
+    border-style: solid;
+    background-color: #3d414d;
+    color: white;
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.search {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
